@@ -1,0 +1,26 @@
+button {
+    padding: 10px 20px;
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+.user-cart {
+    border: 2px solid tomato;
+    border-radius: 5px;
+    width: 300px;
+    padding: 30px;
+    background-color: rgb(253, 159, 146);
+    margin: auto;
+    color: white;
+    font-weight: bold;
+}
+
+img {
+    border-radius: 50%;
+    border: 3px solid tomato;
+}
