@@ -7,6 +7,7 @@ import Register from './Components/Register/Register';
 import Login from './Components/Login/Login';
 import Home from './Components/Home/Home';
 import Product from './Components/Products/Product';
+import RequireAuth from './Components/RequireAuth/RequireAuth';
 import Orders from './Components/Orders/Orders';
 
 function App() {
@@ -17,7 +18,14 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/google" element={<GoogleSingIn />} />
         <Route path="/product" element={<Product />} />
-        <Route path="/orders" element={<Orders />} />
+        <Route
+          path="/orders"
+          element={
+            <RequireAuth>
+              <Orders></Orders>
+            </RequireAuth>
+          }
+        />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
       </Routes>
