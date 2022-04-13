@@ -17,7 +17,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/google" element={<GoogleSingIn />} />
-        <Route path="/product" element={<Product />} />
+        <Route path="/product" element={
+          <RequireAuth>
+            <Product />
+          </RequireAuth>
+        } />
         <Route
           path="/orders"
           element={
